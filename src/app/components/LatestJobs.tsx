@@ -183,7 +183,7 @@ const LatestJobs = () => {
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               key={currentIndex}
             >
-              <AnimatePresence mode="wait">
+              <AnimatePresence>
                 {visibleJobs.map((job, index) => (
                   <motion.div
                     key={`${job.id}-${currentIndex}`}
@@ -196,7 +196,7 @@ const LatestJobs = () => {
                       transition: { duration: 0.2 },
                     }}
                     transition={{
-                      duration: 0.5,
+                      duration: 1.5,
                       delay: index * 0.1,
                       ease: "easeOut" as const,
                     }}
