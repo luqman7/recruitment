@@ -1,6 +1,6 @@
 Assessment by Muhamad Luqman
 
-Click [https://recruitment-rho.vercel.app/]here to visit.
+Click [here](https://recruitment-rho.vercel.app/) to visit.
 
 ## Getting Started
 
