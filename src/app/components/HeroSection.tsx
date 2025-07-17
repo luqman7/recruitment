@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           style={{ y: y1, x: x1 }}
-          className="absolute -top-28 -left-32 w-80 h-80 bg-gradient-to-br from-[#fbb191] to-[#F99D76] rounded-full"
+          className="absolute -top-28 -left-32 w-50 md:w-80 h-50 md:h-80 bg-gradient-to-br from-[#fbb191] to-[#F99D76] rounded-full"
         />
 
         <motion.div
@@ -36,8 +36,8 @@ const HeroSection = () => {
           style={{ x: leftContentX }}
           className="text-white space-y-6"
         >
-          <div>
-            <p className="text-sm uppercase tracking-wide text-blue-200 mb-2">
+          <div className="flex flex-col justify-center items-center md:items-start">
+            <p className="text-sm uppercase tracking-wide text-blue-200 mb-2 mt-4">
               Software Recruitment Specialists
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -45,7 +45,7 @@ const HeroSection = () => {
             </h1>
           </div>
 
-          <div className="flex flex-col sm:flex-row w-full">
+          <div className="flex flex-row w-full">
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <input
@@ -74,7 +74,7 @@ const HeroSection = () => {
             width={400}
             height={500}
             priority
-            className="w-full max-w-md mx-auto h-auto object-cover rounded-4xl shadow-2xl"
+            className="w-full max-w-xs sm:max-w-md mx-auto h-auto object-cover rounded-4xl shadow-2xl"
           />
         </motion.div>
       </div>
